@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ngure's Portfolio</title>
+  <link rel="stylesheet" href="/Templates/styles.css" />
+  <script src="/Templates/scripts.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+      <nav>
+        <div class="logo"><img src="/Images/logo.png" alt="About Me"></div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+  
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+    <div class="hero-content">
+    <h1 style="color:red">Hi, I'm <span class="highlight"> Alvin Ngure</span></h1>
+    <h1 class="typing-animation" id="typing">Hi, I'm <span class="highlight"> Alvin Ngure</span></h1>
+    <p class="subtitle">Data Scientist • IoT Developer • Full Stack Web Dev • AI Engineer</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="Resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </div>
+    </section>
+  
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="" alt="About Me">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I am a passionate Tech enthusiat with a strong foundation in software development, data science, artificial intelligence, and networking.  
+                            My expertise spans multiple fields, including Machine Learning, Web Development, making me a versatile problem-solver in the ever-evolving tech landscape.  
+                    
+                            I specialize in building intelligent systems and solving real-world problems using data-driven approaches. My journey has been fueled by hard work, curiosity, and a relentless drive to learn and innovate.  
+                            I believe in the power of data to transform industries and improve lives, and I am committed to leveraging my skills to make a positive impact.  
+                        </p>
+                    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python, C, R, SQL, JavaScript, PHP, Nextjs</li>
+                                <li><span>Data Science & Machine Learning</span><br>Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Neural Networks, NLP</li>
+                                <li><span>Deep Learning</span><br>CNNs, LSTMs, Transformers</li>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript, Bootstrap, Flask,React,Nextjs, RESTful APIs</li>
+                                <li><span>Database Management</span><br>MySQL, PostgreSQL, MongoDB</li>
+                                <li><span>Data Visualization</span><br>Matplotlib, Seaborn</li>
+                                <li><span>Cloud & DevOps</span><br>Firebase, Supabase, GitHub Actions</li>
+                                <li><span>Networking & Security</span><br>Linux Administration, Ethical Hacking, Cybersecurity Fundamentals</li>
+                            </ul>
+                        </div>                
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2025 - Present</span><br>Freelance Data Scientist & AI Consultant – Building ML-driven solutions for businesses</li>
+                                <li><span>2022</span><br>Data Science Research Project</li>
+                                <li><span>2021</span><br>Web Developer (Freelance) – Designed and deployed multiple web applications for startups</li>
+                            </ul>
+                        </div>               
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>South Eastern Kenya University – **BSc. Computer Science**</li>
+                                <li><span>2019</span><br>High School Education</li>
+                                <li><span>2016</span><br>Primary School Education</li>
+                            </ul>
+                        </div>                
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>Water Token </span><br>Developed in Next.js and Africa's Talking USSD</li>
+                                <li><span>Crop Recommendation System</span><br>Built an ML model to suggest optimal crops based on climate conditions</li>
+                                <li><span>Music Streaming Service</span><br>Designed and developed a full-stack platform for streaming and recommending music</li>
+                                <li><span>Disaster Early Warning System</span><br>Integrated weather APIs and ML to provide real-time disaster alerts</li>
+                                <li><span>E-commerce API with Payment Gateway</span><br>Developed a secure and scalable RESTful API for online transactions</li>
+                                <li><span>IoT-based Smart Irrigation System</span><br>Built an IoT-enabled automated irrigation system for efficient water management</li>
+                            </ul>
+                        </div>               
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>TutorialsPoint Data Science Program</span></li>
+                                <li><span>Applied Data Science- World Quant</span></li>
+                                <li><span>Deep Learning Program With CNN - World Quant</span></li>
+                            </ul>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+  
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+      
+          <!-- Category: Web Based -->
+          <div class="category-block">
+            <h3 class="category-heading">Web Based Projects</h3>
+            <div class="project-grid" id="web-projects">
+              <a href="https://github.com/ngure17/Portifolio"><div class="project-card">
+                <h4>Portfolio Website</h4>
+                <p>Personal portfolio site with a clean responsive design.</p>
+              </div></a>
+
+              <a href="https://github.com/ngure17/archweez-company-site">
+              <div class="project-card">
+                <h4>Real Estate Project</h4>
+                <p>A real Estate project for archweez company limited</p>
+              </div></a>
+
+              <a href="https://github.com/ngure17/smart_water_management_-_distribution"><div  class="project-card">
+                <h4>Water Distribution site</h4>
+                <p>Site to manage distribution of wwater and services offered by water supply agencies</p>
+              </div></a>
+
+              <a href="https://github.com/ngure17/hotel-management-repo"><div class="project-card hidden">
+                <h4>Hotel software</h4>
+                <p>A software for hotel tracking.</p>
+              </div></a>
+            </div>
+            <button class="show-more-btn" data-target="web-projects">Show More</button>
+          </div>
+      
+          <!-- Category: APIs -->
+          <div class="category-block">
+            <h3 class="category-heading">APIs and Back End Developments.</h3>
+            <div class="project-grid" id="api-projects">
+              <a href="https://github.com/ngure17/nextjs-sms-gateway-africas-talking"><div class="project-card">
+                <h4>SMS Broadcasting APIs</h4>
+                <p>SMS broadcasting to different multiple users with next.js</p>
+              </div></a>
+              <a href="https://github.com/ngure17/STK-push-api-nextjs"><div class="project-card hidden">
+                <h4>STK push APIs</h4>
+                <p>Mpesa STK push in next.js</p>
+              </div></a>
+              <a href="https://github.com/ngure17/swms-md-2"><div class="project-card hidden">
+                <h4>USSD Code APIs</h4>
+                <p>USSD code for water management.</p>
+              </div></a>
+            </div>
+            <button class="show-more-btn" data-target="api-projects">Show More</button>
+          </div>
+      
+          <!-- Category: IoT Projects -->
+          <div class="category-block">
+            <h3 class="category-heading">IoT Projects</h3>
+            <div class="project-grid" id="iot-projects">
+              <a href="https://github.com/ngure17/smart_water_management_-_distribution"><div class="project-card">
+                <h4>Smart Water Management System</h4>
+                <p>IoT + Cloud-based billing + real-time leak detection.</p>
+              </div></a>
+              <a href="https://github.com/ngure17/smart-Irrigation-Models"><div class="project-card">
+                <h4>AI Smart Irrigation</h4>
+                <p>IoT sensor-controlled irrigation powered by ML decisions.</p>
+              </div></a>
+            </div>
+          </div>
+      
+          <!-- Category: AI / ML / Deep Learning -->
+          <div class="category-block">
+            <h3 class="category-heading">Data Science | AI | ML | DL</h3>
+            <div class="project-grid" id="ai-projects">
+              <a href="https://github.com/ngure17/Potato-disease-classification-model"><div class="project-card">
+                <h4>Potato Disease Detection</h4>
+                <p>Deep learning CNN model classifying Potato Disease by analyzing leaves Images</p>
+              </div></a>
+              <a href="https://github.com/ngure17/Spam-detection-model-using-Naive-Bayes"><div class="project-card hidden">
+                <h4>Spam Detection Model</h4>
+                <p>Naive Bayes model that classify text to be spam or not.</p>
+              </div></a>
+              <a href="https://github.com/ngure17/Water-Quality-management-model"><div class="project-card hidden">
+                <h4>Water Quality Model</h4>
+                <p>Water Quality under these constraints Residual Free Chlorine (mg/L)  Turbidity (NTU)  water_quality</p>
+              </div></a>
+              <a href="https://github.com/ngure17/Animal-Classification-with-CNNs"><div class="project-card hidden">
+                <h4>Animal classification Model</h4>
+                <p>CNN model classify different animals in an Image</p>
+              </div></a>
+            </div>
+            <button class="show-more-btn" data-target="ai-projects">Show More</button>
+          </div>
+        </div>
+      </section>
+      
+  
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Deep Learning Specialization - Coursera</li>
+          <li>Data Science Professional - IBM</li>
+          <li>IoT for Beginners - Microsoft</li>
+        </ul>
+      </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:alvinmainangure@gmail.com">alvinmainangure@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/alvin-maina-7531aa316/" target="_blank">alvin-maina</a></p>
+        <p>GitHub: <a href="https://github.com/ngure17" target="_blank">ngure17</a></p>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Ngure Alvin Maina. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.show-more-btn').forEach(button => {
+          button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-target');
+            const hiddenCards = document.querySelectorAll(`#${targetId} .hidden`);
+            hiddenCards.forEach(card => card.classList.toggle('hidden'));
+            button.textContent = button.textContent === 'Show More' ? 'Show Less' : 'Show More';
+          });
+        });
+      </script>  
+      <script>
+        const phrases = [
+          "Software Developer ...",
+          "Solving real world problems with Tech",
+          "Building smarter systems with AI + IoT",
+          "Innovating with Code 💡"
+        ];
+      
+        let currentPhraseIndex = 0;
+        let currentCharIndex = 0;
+        let isDeleting = false;
+        let typingElement = null;
+      
+        function typeLoop() {
+          const phrase = phrases[currentPhraseIndex];
+          if (!typingElement) typingElement = document.getElementById("typing");
+      
+          if (isDeleting) {
+            typingElement.textContent = phrase.substring(0, currentCharIndex--);
+          } else {
+            typingElement.textContent = phrase.substring(0, currentCharIndex++);
+          }
+      
+          if (!isDeleting && currentCharIndex === phrase.length) {
+            setTimeout(() => isDeleting = true, 1000);
+          } else if (isDeleting && currentCharIndex === 0) {
+            isDeleting = false;
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+          }
+      
+          const speed = isDeleting ? 50 : 100;
+          setTimeout(typeLoop, speed);
+        }
+      
+        // Initial run
+        document.addEventListener("DOMContentLoaded", () => {
+          typingElement = document.getElementById("typing");
+          typeLoop();
+        });
+      
+        // Re-trigger typing every 60 seconds
+        setInterval(() => {
+          isDeleting = true;
+        }, 60000);
+      
+        // Re-trigger when user scrolls to #home
+        window.addEventListener('scroll', () => {
+          const homeSection = document.querySelector('#home');
+          const homeTop = homeSection.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+      
+          if (homeTop >= 0 && homeTop < windowHeight / 2) {
+            isDeleting = true;
+          }
+        });
+      </script>          
+  
+</body>
+</html>
