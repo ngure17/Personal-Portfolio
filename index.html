@@ -13,7 +13,6 @@
         align-items: flex-start;
         padding: 10px;
     }
-    
     .about-col-1 img {
         width: 120px;
         height: 120px;
@@ -22,6 +21,35 @@
         border: 4px solid #00bcd4;
         margin: 0;
     }
+
+    /* Featured (latest) projects */
+    .featured-intro { margin: 0 0 20px; opacity: .85; }
+    .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .featured-link { display: block; text-decoration: none; color: inherit; }
+    .featured-link:focus-visible { outline: 3px solid #00bcd4; outline-offset: 3px; }
+    .project-card.featured {
+        height: 100%;
+        border-left: 4px solid #00bcd4;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .featured-badge {
+        align-self: flex-start;
+        font-size: .75rem;
+        padding: 2px 10px;
+        border: 1px solid #00bcd4;
+        border-radius: 999px;
+        color: #00bcd4;
+    }
+    .project-card.featured ul { margin: 4px 0 0 18px; padding: 0; font-size: .92rem; }
+    .project-card.featured li { margin-bottom: 4px; }
+    .featured-visit { margin-top: auto; padding-top: 8px; font-weight: 600; color: #00bcd4; }
   </style>
 </head>
 <body>
@@ -51,10 +79,10 @@
     <div class="hero-content">
     <h1 style="color:red">Hi, I'm <span class="highlight"> Alvin Ngure</span></h1>
     <h1 class="typing-animation" id="typing">Hi, I'm <span class="highlight"> Alvin Ngure</span></h1>
-    <p class="subtitle"> Full Stack Web Dev and AI Engineer</p>
+    <p class="subtitle"> Full Stack Web Dev </p>
     <div class="hero-buttons">
       <a href="#projects" class="btn">View My Work</a>
-      <a href="https://drive.google.com/file/d/1Za2KHsrsWeWsgRWx6upfB_6G96UNwmPI/view" target="_blank" class="btn">View My CV</a>
+      <a href="https://drive.google.com/file/d/1Za2KHsrsWeWsgRWx6upfB_6G96UNwmPI/view" target="_blank" rel="noopener noreferrer" class="btn">View My CV</a>
     </div>
   </div>
     </section>
@@ -86,19 +114,19 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Programming Languages</span><br>Python, C, R, SQL, JavaScript, PHP, Nextjs</li>
+                                <li><span>Programming Languages</span><br>Python, C,  SQL, JavaScript, Nextjs</li>
                                 <li><span>Data Science & Machine Learning</span><br>Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Neural Networks, NLP</li>
                                 <li><span>Deep Learning</span><br>CNNs and Computer vision and ANN</li>
                                 <li><span>Web Development</span><br>HTML, CSS, JavaScript, Bootstrap, Flask,React,Nextjs, RESTful APIs</li>
                                 <li><span>Database Management</span><br>MySQL, PostgreSQL, MongoDB</li>
                                 <li><span>Data Visualization</span><br>Matplotlib, Seaborn</li>
                                 <li><span>Cloud & DevOps</span><br>Firebase, Supabase, GitHub Actions</li>
-                                <li><span>Networking & Security</span><br>Linux Administration, Cybersecurity Fundamentals</li
+                                <li><span>Networking & Security</span><br>Linux Administration, Cybersecurity Fundamentals</li>
                             </ul>
                         </div>                
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>2025 - Present</span><br>Freelance Data Scientist & AI Consultant – Building ML-driven solutions for businesses</li>
+                                <li><span>2025 - Present</span><br>Freelance software Engineer & AI Consultant – Building ML-driven solutions for businesses</li>
                                 <li><span>2022</span><br>Data Science Research Project</li>
                                 <li><span>2021</span><br>Web Developer (Freelance) – Designed and deployed multiple web applications for startups</li>
                             </ul>
@@ -112,6 +140,10 @@
                         </div>                
                         <div class="tab-contents" id="projects">
                             <ul>
+                                <li><span>Cleanex Smart Water Platform</span><br>Prepaid water token vending with M-Pesa payments and smart meter management</li>
+                                <li><span>SavannaRise Africa Tourism Website &amp; CMS</span><br>Safari packages and 4x4 rentals with a content management system</li>
+                                <li><span>ECTES Website &amp; CMS</span><br>Business website with quotations, invoices and gate passes</li>
+                                <li><span>Fraternity Church Website &amp; CMS</span><br>Church website with sermons and teaching resources</li>
                                 <li><span>Water Token </span><br>Developed in Next.js and Africa's Talking USSD</li>
                                 <li><span>Crop Recommendation System</span><br>Built an ML model to suggest optimal crops based on climate conditions</li>
                                 <li><span>Music Streaming Service</span><br>Designed and developed a full-stack platform for streaming and recommending music</li>
@@ -138,6 +170,78 @@
     <section id="projects" class="projects">
         <div class="container">
           <h2 class="section-title">Projects</h2>
+
+          <!-- Featured: Latest Professional Projects -->
+          <div class="category-block">
+            <h3 class="category-heading">Latest Professional Projects</h3>
+            <p class="featured-intro">Production systems built for real businesses and organisations. Each card opens the live site in a new tab.</p>
+            <div class="featured-grid" id="featured-projects">
+
+              <a class="featured-link" href="https://ectes-website.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="ECTES Website and CMS: open live website in a new tab">
+                <div class="project-card featured">
+                  <span class="featured-badge">Website &amp; CMS</span>
+                  <h4>ECTES Website &amp; CMS</h4>
+                  <p>A business website and content management system that supports everyday business operations and document workflows.</p>
+                  <ul>
+                    <li>Quotations</li>
+                    <li>Invoices</li>
+                    <li>Gate passes</li>
+                    <li>Business information management</li>
+                  </ul>
+                  <span class="featured-visit">Visit live site &rarr;</span>
+                </div>
+              </a>
+
+              <a class="featured-link" href="https://savannarise-africa.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="SavannaRise Africa Tourism Website and CMS: open live website in a new tab">
+                <div class="project-card featured">
+                  <span class="featured-badge">Full-Stack &amp; CMS</span>
+                  <h4>SavannaRise Africa Tourism Website &amp; CMS</h4>
+                  <p>A tourism and safari website for an East African tour and car-rental company.</p>
+                  <ul>
+                    <li>Tourism and safari packages</li>
+                    <li>4x4 rentals: self-drive and chauffeur-driven</li>
+                    <li>Tour and destination management</li>
+                    <li>Vehicle and content management through a CMS</li>
+                    <li>Customer quotation and inquiry workflows</li>
+                  </ul>
+                  <span class="featured-visit">Visit live site &rarr;</span>
+                </div>
+              </a>
+
+              <a class="featured-link" href="https://prepaid-token-meter.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Cleanex Smart Water Platform: open live website in a new tab">
+                <div class="project-card featured">
+                  <span class="featured-badge">Fintech &amp; Utilities</span>
+                  <h4>Cleanex Smart Water Platform</h4>
+                  <p>A smart water management and prepaid token vending platform for real-estate developments and water utility operations, connecting financial transactions with real-world utility processes.</p>
+                  <ul>
+                    <li>Prepaid water token vending</li>
+                    <li>M-Pesa payment integration</li>
+                    <li>Smart meter management</li>
+                    <li>Consumption and transaction records</li>
+                    <li>Customer and administrative dashboards</li>
+                    <li>Revenue tracking and payout management</li>
+                  </ul>
+                  <span class="featured-visit">Visit live site &rarr;</span>
+                </div>
+              </a>
+
+              <a class="featured-link" href="https://www.fraternitychurch.org/" target="_blank" rel="noopener noreferrer" aria-label="Fraternity Church Website and CMS: open live website in a new tab">
+                <div class="project-card featured">
+                  <span class="featured-badge">Website &amp; CMS</span>
+                  <h4>Fraternity Church Website &amp; CMS</h4>
+                  <p>A church website with content management capabilities, giving the church an accessible digital presence.</p>
+                  <ul>
+                    <li>Church information and content presentation</li>
+                    <li>Digital content management</li>
+                    <li>Sermons and teaching resources</li>
+                    <li>Responsive website experience</li>
+                  </ul>
+                  <span class="featured-visit">Visit live site &rarr;</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
       
           <!-- Category: Web Based -->
           <div class="category-block">
@@ -246,8 +350,8 @@
       <div class="container">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:alvinmainangure@gmail.com">alvinngure17@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/alvin-maina-7531aa316/" target="_blank">alvin-maina</a></p>
-        <p>GitHub: <a href="https://github.com/ngure17" target="_blank">ngure17</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/alvin-maina-7531aa316/" target="_blank" rel="noopener noreferrer">alvin-maina</a></p>
+        <p>GitHub: <a href="https://github.com/ngure17" target="_blank" rel="noopener noreferrer">ngure17</a></p>
       </div>
     </section>
   
@@ -311,9 +415,10 @@
           isDeleting = true;
         }, 60000);
       
-        // Re-trigger when user scrolls to #home
+        // Re-trigger when user scrolls to the hero section
         window.addEventListener('scroll', () => {
-          const homeSection = document.querySelector('#home');
+          const homeSection = document.querySelector('#hero');
+          if (!homeSection) return;
           const homeTop = homeSection.getBoundingClientRect().top;
           const windowHeight = window.innerHeight;
       
